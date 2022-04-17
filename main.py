@@ -5,7 +5,7 @@ from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor, InfraredSensor
 from pybricks.parameters import Port, Stop, Direction, Button, Color
 from pybricks.tools import wait, StopWatch, DataLog
 from pybricks.robotics import DriveBase
-from pybricks.media.ev3dev import SoundFile, ImageFile
+from pybricks.media.ev3dev import SoundFile, ImageFiles
 import json
 
 ev3 = EV3Brick()
@@ -451,6 +451,7 @@ while cargo_plane or truck_bridge or truck2truck or homedelivery:
 
 
     # This is an angle tracker for each motor, used when moving the robot freehand and trying to see how far we should move the robot.
+    
     #if Button.DOWN in ev3.buttons.pressed(): 
     #    ev3.screen.clear()
     #    while True:
